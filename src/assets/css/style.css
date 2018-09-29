@@ -1,12 +1,13 @@
 body {
-  background-color:	#444d47;
+  background-color: #444d47;
 }
 
 .container {
-  background-color:	#dddbdb;
+  background-color: #dddbdb;
   padding: 20px;
 }
 
-#app {
-  color: red;
+.header {
+  color: #677e74;
+  margin-bottom: 20px;
 }
