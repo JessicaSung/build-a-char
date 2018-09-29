@@ -18,10 +18,11 @@
 <body>
   <div class="container">
     <div class="container-fluid">
+      <h2 class="header">ETU - Savage Worlds</h2>
       <div class="row justify-content-md-center">
         <form class="needs-validation" novalidate>
           <!-- Row 1 - Character name -->
-          <div class="form-group row text-center">
+          <div class="form-group row">
             <div class="col-md">
               <label for="charName">Character Name: </label>
               <input type="name" class="form-control" value="" id="charName" required>
@@ -96,8 +97,46 @@
               </select>
             </div>
           </div>
-          <!-- Row 3 -->
-          <!-- Row 4 -->
+          <!-- Row 3 - Derived stats -->
+          <div class="form-group row text-center">
+            <div class="col-sm">
+              <label for="inputPace">Pace</label>
+              <input type="text" class="form-control" id="pace">
+            </div>
+            <div class="col-sm">
+              <label for="inputParry">Parry</label>
+              <input type="text" class="form-control" id="parry">
+            </div>
+            <div class="col-sm">
+              <label for="inputToughness">Toughness</label>
+              <input type="text" class="form-control" id="toughness">
+            </div>
+            <div class="col-sm">
+              <label for="inputCharisma">Charisma</label>
+              <input type="text" class="form-control" id="charisma">
+            </div>
+          </div>
+          <!-- Row 4 - Personality Quirks -->
+          <div class="form-group row">
+            <div class="col-sm">
+              <label for="personalityQuirks">Personality Quirks (Hindrances): </label>
+              <textarea class="form-control" rows="2" id="personalityQuirks"></textarea>
+            </div>
+          </div>
+          <!-- Row 5 - Edges -->
+          <div class="form-group row">
+            <div class="col-sm">
+              <label for="edges">Edges: </label>
+              <textarea class="form-control" rows="2" id="edges"></textarea>
+            </div>
+          </div>
+          <!-- Row 6 - Notes -->
+          <div class="form-group row">
+            <div class="col-sm">
+              <label for="notes">Notes: </label>
+              <textarea class="form-control" rows="5" id="notes"></textarea>
+            </div>
+          </div>
           <!-- Submit button -->
           <button class="btn btn-primary" type="submit">Submit form</button>
           <!-- End form -->
