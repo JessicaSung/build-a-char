@@ -9,22 +9,107 @@
   <link rel="icon" href="img/favicon.ico">
   <title>Character</title>
   <!-- custom styles -->
-  <link href="../src/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../src/assets/css/style.css">
+
 </head>
 
 <body>
-  <!-- Riss code goes here -->
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+          <!-- Riss code goes here -->
+        <form class="needs-validation" novalidate>
+            <div class="form-group row text-center">
+              <div class="col-md">
+                <label for="charName">Character Name: </label>
+                <input type="name" class="form-control" value="" id="charName" required>
+                <div class="invalid-feedback">
+                  You need a Character name!
+                </div>
+              </div>
+              <div class="col-md">
+                <label for="charConcept">Concept: </label>
+                <input type="text" class="form-control" value="" id="charConcept" required>
+              </div>
+              <div class="col-md">
+                <label for="charCatchphrase">Catch Phrase: </label>
+                <input type="text" class="form-control" id="charCatchphrase">
+              </div>
+            </div>
+            <div class="form-group row text-center">
+              <div class="col-sm">
+                <label for="inputAgility">Agility</label>
+                <select name="" id="inputAgility" class="form-control" required>
+                  <option value="" selected>...</option>
+                  <option value="">4</option>
+                  <option value="">6</option>
+                  <option value="">8</option>
+                  <option value="">10</option>
+                  <option value="">12</option>
+                </select>
+              </div>
+              <div class="col-sm">
+                <label for="inputSmarts">Smarts</label>
+                <select name="" id="inputSmarts" class="form-control" required>
+                  <option value="" selected>...</option>
+                  <option value="">4</option>
+                  <option value="">6</option>
+                  <option value="">8</option>
+                  <option value="">10</option>
+                  <option value="">12</option>
+                </select>
+              </div>
+              <div class="col-sm">
+                <label for="inputSpirits">Spirits</label>
+                <select name="" id="inputSpirits" class="form-control" required>
+                  <option value="" selected>...</option>
+                  <option value="">4</option>
+                  <option value="">6</option>
+                  <option value="">8</option>
+                  <option value="">10</option>
+                  <option value="">12</option>
+                </select>
+              </div>
+              <div class="col-sm">
+                <label for="inputStrength">Strength</label>
+                <select name="" id="inputStrength" class="form-control" required>
+                  <option value="" selected>...</option>
+                  <option value="">4</option>
+                  <option value="">6</option>
+                  <option value="">8</option>
+                  <option value="">10</option>
+                  <option value="">12</option>
+                </select>
+              </div>
+              <div class="col-sm">
+                <label for="inputVigor">Vigor</label>
+                <select name="" id="inputVigor" class="form-control" required>
+                  <option value="" selected>...</option>
+                  <option value="">4</option>
+                  <option value="">6</option>
+                  <option value="">8</option>
+                  <option value="">10</option>
+                  <option value="">12</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+
+          <!-- End Riss code -->
+          <!-- Jessica code goes here -->
 
 
-  <!-- End Riss code -->
-  <!-- Jessica code goes here -->
-
-
-  <!-- End Jessica code -->
+          <!-- End Jessica code -->
+      </div>
+    </div>
+  </div>
 
   <!-- Below code for React app -->
   <div id="app"></div>
   <script src="bundle.js"></script>
+  <script src="charsheet.js"></script>
 </body>
 
 </html>
